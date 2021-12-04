@@ -1,11 +1,11 @@
 #include <iostream>
-
+ 
 int main()
 {
    int nbr_problems;
-
+ 
    std::cin >> nbr_problems;
-
+ 
    int count = 0;
    int submit = 0;
    int number ;
