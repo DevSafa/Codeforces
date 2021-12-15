@@ -10,18 +10,14 @@ int main(){
     std::cin >> result;
 
     int anton = 0;
-    int danik = 0;
     for(int i = 0 ; i <  nbr_games ; i++)
     {
         if(result[i] == 'A')
             anton++;
-        else
-            danik++;
     }
-
-    if (anton == danik)
+    if((nbr_games % 2 == 0 && anton == result.length() / 2))
         std::cout << "Friendship" << "\n";
-    else if (anton > danik)
+    else if (anton >= (result.length() / 2) + 1)
         std::cout << "Anton" << "\n";
     else
         std::cout << "Danik" << "\n";
